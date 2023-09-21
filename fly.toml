@@ -1,16 +1,11 @@
-# fly.toml app configuration file generated for photonic-remix-redis on 2023-07-03T16:38:54+02:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
-app = "photonic-remix-redis"
+app = "photonic-next-staging-redis"
 primary_region = "ams"
 
 [build]
   image = "flyio/redis:6.2.6"
 
 [[mounts]]
-  source = "photonic_remix_redis_volume"
+  source = "photonic_next_staging_redis_v"
   destination = "/data"
 
 [[services]]
